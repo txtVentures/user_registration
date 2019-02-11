@@ -1,0 +1,12 @@
+extends ./layout
+
+block title
+    | The White...(yeessss!)
+
+block body
+    h2 Users
+
+    ul
+      each user in users
+        li
+          | user.first

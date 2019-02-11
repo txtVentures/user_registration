@@ -1,0 +1,25 @@
+extends ./layout
+
+block title
+    | The Big Red Door
+
+block body
+    h1.title "New England Clam Chowder"           
+   
+    
+    form(action="/login" method="POST")
+        input(type="text" name="username")
+        br
+        
+        input(type="password" name="password")
+        br
+        p 
+            | Is that the red or the white...
+            
+        button( class="button is-small" type="submit") White
+        |
+        |
+        a(class='button is-small', href='/nope') Red
+        
+
+    

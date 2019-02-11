@@ -1,0 +1,18 @@
+extends ./layout
+
+block title
+    | Headbangers Concert
+
+block body
+    h1.title 'have you seen Greg?...'           
+   
+    
+    form(action="/register" method="POST")
+        p you know if you don't belong...
+        input(type="text" name="first")
+        input(type="text" name="last")
+        input(type="text" name="username")
+        input(type="password" name="password")
+        button(type="submit") put your name on the list
+    
+ 
