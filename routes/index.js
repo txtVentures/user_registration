@@ -4,7 +4,7 @@ const router  = express.Router();
 
 router.get('/', function(req, res) {
   models.User.findAll({
-    include: [ models.Users ]
+    include: [ models.users ]
   }).then(function(users) {
     res.render('index', {
       title: 'New England Clam Chowder Crowd',
